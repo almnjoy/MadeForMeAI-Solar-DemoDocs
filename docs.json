@@ -43,6 +43,8 @@
       {
         "group": "Features",
         "pages": [
+          "features/agents",
+          "features/your-agents",
           "features/memory",
           "features/whatsapp"
         ]

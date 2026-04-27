@@ -1,0 +1,64 @@
+---
+title: Agents
+description: What agents are, how they work, and how to build your own.
+---
+
+Your AI instance isn't just one thing — it's a collection of agents. Each agent is a focused mode with its own personality, purpose, and context. You switch between them depending on what you need.
+
+## What is an agent?
+
+An agent is a separate AI workspace inside your instance. It has its own:
+
+- **Identity** — who it is and how it behaves
+- **Memory** — what it knows and tracks over time
+- **Tools** — what it can access and reference
+- **Purpose** — a specific job it's designed to do
+
+Agents share the same underlying AI model, but each one is shaped by a set of files that define how it should think, respond, and focus. Think of them as different modes — or different people on a team — each specialized for a different kind of work.
+
+## Switching agents
+
+In your chat interface, use the agent selector at the top to switch between available agents. Each agent starts fresh from its own context, not from what you were discussing with a different agent.
+
+## How agents are built — the workspace
+
+Every agent has a **workspace folder** — a directory of plain text files that the agent reads at the start of each session. These files are the agent's brain.
+
+The standard files are:
+
+| File | Purpose |
+|---|---|
+| `SOUL.md` | Core personality, values, and behavioral principles |
+| `IDENTITY.md` | Who the agent is — name, role, vibe, emoji |
+| `AGENTS.md` | Instructions for how to operate in this workspace |
+| `TOOLS.md` | What environment and resources the agent has access to |
+| `USER.md` | Information about the person it's talking to |
+| `HEARTBEAT.md` | Optional: tasks to run on a schedule |
+| `BOOTSTRAP.md` | First-run only — deleted after the agent reads it |
+
+The agent reads these files at session start, then uses them to shape every response. Change a file, change how the agent behaves — no redeployment needed.
+
+## Memory
+
+Agents wake up fresh each session. Files are their continuity.
+
+- **Daily notes:** `memory/YYYY-MM-DD.md` — the agent writes what it learns each day
+- **Long-term:** `MEMORY.md` — persistent facts, preferences, and context
+- **User tracking:** `USER.md` — updated as the agent learns about you
+
+If an agent needs to remember something, it writes it down. This is intentional — it keeps the agent reliable across sessions without depending on a single context window.
+
+## Building your own agent
+
+An agent is just a folder of markdown files. To create one:
+
+1. Create a workspace folder with the standard files above
+2. Write `SOUL.md` — define the personality and core behavior
+3. Write `IDENTITY.md` — give it a name and role
+4. Write `AGENTS.md` — set its operating rules and focus
+5. Write `TOOLS.md` — describe what it has access to
+6. Register it in your OpenClaw config under `agents.list`
+
+The more specific the files, the more focused and useful the agent. Vague instructions produce vague behavior. Precise files produce precise agents.
+
+<Note>Your Setup Assistant can help you configure a new agent. Just describe what you want it to do and it will walk you through the setup.</Note>

@@ -1,0 +1,76 @@
+---
+title: Your Agents
+description: The agents built into your MadeForMeAI instance.
+---
+
+Every MadeForMeAI instance comes with agents pre-configured and ready to use. Here's what each one does.
+
+---
+
+## Setup Assistant 🛠️
+
+**Purpose:** Guides you through setting up and configuring features in your instance.
+
+The Setup Assistant is your go-to when you want to connect something new — WhatsApp, a new tool, a new agent, or any configuration change. It knows the MadeForMeAI environment, follows UI-based guidance only (no terminal commands, ever), and works step-by-step until you're done.
+
+**How it works:**
+- On first use, it asks your name and what you're trying to set up
+- It saves what it learns about you to `USER.md` so it remembers across sessions
+- It tracks setup progress — if you come back mid-setup, it picks up where you left off
+- If it doesn't know something, it says so and guides you to the next best step
+
+**Best for:** Connecting WhatsApp, configuring features, troubleshooting setup issues.
+
+**How to use it:** Switch to "Setup Assistant" in the agent selector and say what you're trying to do.
+
+---
+
+## Founder 🚀
+
+**Purpose:** Answers questions about MadeForMeAI the way the founder would — directly, simply, and without the corporate tone.
+
+This agent represents Dustin (the person who built this). It knows the product, understands the thinking behind it, and can explain anything from "what even is this" to "what should I do next" in plain language.
+
+It doesn't overwhelm. It doesn't pad responses. It guides.
+
+**How it responds:**
+- Conversational, not structured
+- Recommends one thing instead of listing five options
+- Tells you the next step rather than explaining everything at once
+
+**Best for:** Understanding what MadeForMeAI is, what it can do, and where to start.
+
+**How to use it:** Switch to "Founder" and ask whatever's on your mind.
+
+---
+
+## Discord Support 🛠️
+
+**Purpose:** Support-focused help, tuned for troubleshooting and step-by-step guidance.
+
+Similar to the Founder agent but in support mode — calmer, more methodical, focused on getting you unblocked. It references the MadeForMeAI docs, translates documentation into plain steps, and doesn't guess when it doesn't know.
+
+**How it responds:**
+- Step-by-step when walking through a fix
+- Asks for specifics (what you see, what step you're on, any errors) before diagnosing
+- References docs but explains them in plain language
+
+**Best for:** Something isn't working, you're stuck mid-setup, or you need a clear fix.
+
+**How to use it:** Switch to "Discord Support" and describe what's happening.
+
+---
+
+## Your main agent
+
+Your main agent (the default when you open your instance) is your personal AI — not one of the specialized agents above. It's shaped by your own files in your workspace:
+
+- `SOUL.md` — its personality
+- `USER.md` — what it knows about you
+- `MEMORY.md` — what it remembers long-term
+
+This is the agent that grows with you over time.
+
+---
+
+<Note>Want to build your own agent? See [Agents](/features/agents) for how the workspace file system works and how to create one from scratch.</Note>
