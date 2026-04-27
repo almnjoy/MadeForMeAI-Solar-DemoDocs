@@ -3,14 +3,14 @@
   "name": "MadeForMeAI",
   "theme": "mint",
   "logo": {
-    "light": "/Logos/mfmai-icon-dark.png",
-    "dark": "/Logos/mfmai-icon-dark.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "favicon": "/Logos/mfmai-icon-dark.png",
   "colors": {
-    "primary": "#6C63FF",
-    "light": "#A89CFF",
-    "dark": "#4B44CC"
+    "primary": "#1e3a8a",
+    "light": "#0ea5e9",
+    "dark": "#f97316"
   },
   "navbar": {
     "links": [
