@@ -1,0 +1,79 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "MadeForMeAI",
+  "theme": "almond",
+  "logo": {
+    "light": "https://media.brand.dev/89851bf3-d5ab-448a-b66d-918781d90e7a.png",
+    "dark": "https://media.brand.dev/89851bf3-d5ab-448a-b66d-918781d90e7a.png"
+  },
+  "favicon": "https://media.brand.dev/94fa2fb1-527a-4b2a-b00c-3f336a95418b.png",
+  "colors": {
+    "primary": "#3c1314"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/madeformeai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Get your AI",
+      "href": "https://madeformeai.com/signup"
+    }
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/madeformeai"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "quickstart",
+          "getting-started/your-ai-url",
+          "getting-started/logging-in",
+          "getting-started/first-conversation"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/memory",
+          "features/file-uploads",
+          "features/web-search",
+          "features/email-calendar",
+          "features/model-picker"
+        ]
+      },
+      {
+        "group": "BYOK",
+        "pages": [
+          "byok/what-is-byok",
+          "byok/adding-your-key",
+          "byok/supported-providers"
+        ]
+      },
+      {
+        "group": "Account & Billing",
+        "pages": [
+          "account/managing-subscription",
+          "account/cancellation"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "troubleshooting/cant-log-in",
+          "troubleshooting/model-not-responding",
+          "troubleshooting/email-not-received",
+          "faq"
+        ]
+      }
+    ]
+  }
+}

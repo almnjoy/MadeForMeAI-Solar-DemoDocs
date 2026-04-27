@@ -1,0 +1,56 @@
+---
+title: "How to Add Your BYOK API Key to MadeForMeAI Settings"
+description: "Connect your OpenAI, Anthropic, or OpenRouter API key to MadeForMeAI in Settings — your AI will use it automatically for every conversation."
+---
+
+Once you have an API key from a supported provider, connecting it to your MadeForMeAI instance takes less than a minute. After you save your key in Settings, your AI will use it automatically for every conversation.
+
+<Steps>
+  <Step title="Open Settings">
+    In the chat interface, locate the **Settings** icon — typically a gear icon in the sidebar or top menu. Click it to open the Settings panel.
+  </Step>
+
+  <Step title="Navigate to API Keys">
+    Inside Settings, find the **API Keys** section and click **Add** to begin adding a new key.
+  </Step>
+
+  <Step title="Paste your key and save">
+    Select your provider, paste in your API key, and click **Save**.
+
+    | Provider | Where to get your key |
+    |---|---|
+    | OpenRouter | openrouter.ai → Keys |
+    | OpenAI | platform.openai.com → API Keys |
+    | Anthropic | console.anthropic.com → API Keys |
+
+    <Warning>
+    Paste your key exactly as copied — no extra spaces or characters. A small mistake will prevent the key from being recognized.
+    </Warning>
+  </Step>
+
+  <Step title="Select your model">
+    Return to the chat and open the model picker dropdown. Select a model from your provider. Your key is used automatically from this point forward.
+  </Step>
+</Steps>
+
+<Note>
+**OpenRouter is recommended for most BYOK users.** A single OpenRouter key gives you access to models from OpenAI, Anthropic, Google, and more — without needing separate accounts for each provider.
+</Note>
+
+## Troubleshooting
+
+**Model shows an error after adding the key**
+
+- Confirm your API key was pasted correctly with no extra characters.
+- Log in to your provider account and check that you have available credits or quota.
+- Try selecting a different model from the picker to rule out a model-specific issue.
+
+**Not sure which model to start with?**
+
+These are reliable, cost-effective starting points:
+
+- **OpenRouter:** `openai/gpt-4.1-mini`
+- **OpenAI:** `gpt-4o-mini`
+- **Anthropic:** `claude-3-5-haiku-20241022`
+
+Still stuck? Ask in [Discord](https://discord.gg/madeformeai).
