@@ -3,8 +3,8 @@
   "name": "MadeForMeAI",
   "theme": "mint",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/Logos/LOGO-transparent.png",
+    "dark": "/Logos/LOGO-transparent.png"
   },
   "favicon": "/Logos/mfmai-icon-dark.png",
   "colors": {
@@ -34,23 +34,39 @@
     "groups": [
       {
         "group": "Get Started",
-        "pages": ["introduction", "quickstart", "faq"]
+        "pages": [
+          "introduction",
+          "quickstart",
+          "faq"
+        ]
       },
       {
         "group": "Features",
-        "pages": ["features/memory", "features/whatsapp"]
+        "pages": [
+          "features/memory",
+          "features/whatsapp"
+        ]
       },
       {
         "group": "Your Account",
-        "pages": ["account/plans", "account/billing", "byok/setup"]
+        "pages": [
+          "account/plans",
+          "account/billing",
+          "byok/setup"
+        ]
       },
       {
         "group": "Troubleshooting",
-        "pages": ["troubleshooting/common-issues"]
+        "pages": [
+          "troubleshooting/common-issues"
+        ]
       },
       {
         "group": "Legal",
-        "pages": ["legal/privacy", "legal/terms"]
+        "pages": [
+          "legal/privacy",
+          "legal/terms"
+        ]
       }
     ]
   }
