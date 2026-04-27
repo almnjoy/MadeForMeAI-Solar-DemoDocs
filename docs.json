@@ -3,8 +3,8 @@
   "name": "MadeForMeAI",
   "theme": "mint",
   "logo": {
-    "light": "/Logos/LOGO-transparent.png",
-    "dark": "/Logos/LOGO-transparent.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "favicon": "/Logos/mfmai-icon-dark.png",
   "colors": {
