@@ -1,71 +1,39 @@
 ---
-title: "BYOK: All Supported AI API Providers in MadeForMeAI"
-description: "MadeForMeAI supports OpenRouter, OpenAI, and Anthropic for BYOK — compare what each provider offers and learn how to get your API key."
+title: Supported Providers
+description: Which API key providers work with BYOK.
 ---
 
-MadeForMeAI supports three AI providers for BYOK: OpenRouter, OpenAI, and Anthropic. Each gives you access to different models and has its own billing model. You only need one key to get started — read through the options below to find the right fit for you.
-
-<CardGroup cols={3}>
-  <Card title="OpenRouter" icon="star">
-    One key for models from OpenAI, Anthropic, Google, Meta, and more.
-  </Card>
-  <Card title="OpenAI" icon="circle">
-    Direct access to GPT-4o and other OpenAI models.
-  </Card>
-  <Card title="Anthropic" icon="circle">
-    Direct access to Claude Sonnet, Haiku, and Opus.
-  </Card>
-</CardGroup>
+MadeForMeAI supports three API key providers for BYOK users.
 
 ## OpenRouter (recommended)
 
-**Environment variable:** `OPENROUTER_API_KEY`
+**Variable:** `OPENROUTER_API_KEY`
+**Get a key:** [openrouter.ai](https://openrouter.ai)
 
-OpenRouter is a unified API gateway that routes requests to models from OpenAI, Anthropic, Google, Meta, and many other providers — all through a single key. You pay only for what you use, with no monthly minimums.
+OpenRouter gives you access to models from OpenAI, Anthropic, Google, Meta, and more — all with a single key. You only pay for what you use, with no monthly minimums.
 
-This is the best option for most BYOK users. You get the widest model selection available, and you can switch between providers at any time without generating a new key.
-
-**How to get a key:**
-1. Go to [openrouter.ai](https://openrouter.ai) and create an account.
-2. Navigate to **Keys** in your dashboard.
-3. Generate a new API key and copy it.
+This is the best option for most BYOK users because you get the widest model selection and can switch between providers without getting a new key.
 
 ---
 
 ## OpenAI
 
-**Environment variable:** `OPENAI_API_KEY`
+**Variable:** `OPENAI_API_KEY`
+**Get a key:** [platform.openai.com](https://platform.openai.com)
 
-An OpenAI key gives you direct access to GPT-4o, GPT-4o mini, and other OpenAI models. You'll need to add credits to your OpenAI account before your key can be used for API calls.
-
-**How to get a key:**
-1. Go to [platform.openai.com](https://platform.openai.com) and sign in or create an account.
-2. Navigate to **API Keys** in the dashboard.
-3. Click **Create new secret key**, copy it, and store it somewhere safe — you won't be able to view it again.
-4. Add credits to your account under **Billing** if you haven't already.
+Gives you access to GPT-4o, GPT-4o mini, and other OpenAI models. You'll need to add credits to your OpenAI account before use.
 
 ---
 
 ## Anthropic
 
-**Environment variable:** `ANTHROPIC_API_KEY`
+**Variable:** `ANTHROPIC_API_KEY`
+**Get a key:** [console.anthropic.com](https://console.anthropic.com)
 
-An Anthropic key gives you direct access to the Claude family of models, including Claude Sonnet, Haiku, and Opus. Like OpenAI, you'll need to add credits to your Anthropic account before use.
-
-**How to get a key:**
-1. Go to [console.anthropic.com](https://console.anthropic.com) and sign in or create an account.
-2. Navigate to **API Keys**.
-3. Create a new key, copy it, and store it somewhere safe.
-4. Add credits to your account under **Billing** before making API calls.
+Gives you access to Claude models (Sonnet, Haiku, Opus). You'll need to add credits to your Anthropic account before use.
 
 ---
 
-## Which provider should you choose?
+## Which should I pick?
 
-<Tip>
-If you're unsure, start with **OpenRouter**. One key gives you access to all major model families, you pay only for what you use, and there are no monthly minimums. It's the lowest-friction way to get started with BYOK.
-</Tip>
-
-If you already have an existing OpenAI or Anthropic account with credits, you can use that key directly — there's no need to create a new account just for BYOK.
-
-Once you've chosen a provider, follow the instructions in [Add Your API Key](/byok/adding-your-key) to connect it to your MadeForMeAI instance.
+If you're not sure, go with **OpenRouter**. One key, all models, pay as you go. It's the most flexible option with the lowest barrier to entry.

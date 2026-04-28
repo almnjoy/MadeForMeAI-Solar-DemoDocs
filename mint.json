@@ -1,0 +1,73 @@
+{
+  "name": "MadeForMeAI",
+  "logo": {
+    "light": "https://docs.quickitprojects.com/wp-content/uploads/2026/04/LOGO-transparent-e1777317103635.png",
+    "dark": "https://docs.quickitprojects.com/wp-content/uploads/2026/04/LOGO-transparent-e1777317103635.png"
+  },
+  "colors": {
+    "primary": "#6d28d9",
+    "light": "#8b5cf6",
+    "dark": "#4c1d95"
+  },
+  "topbarLinks": [
+    {
+      "name": "Discord",
+      "url": "https://discord.gg/madeformeai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get your AI",
+    "url": "https://madeformeai.com/signup"
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "quickstart",
+        "getting-started/your-ai-url",
+        "getting-started/logging-in",
+        "getting-started/first-conversation"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/memory",
+        "features/file-uploads",
+        "features/web-search",
+        "features/model-picker"
+      ]
+    },
+    {
+      "group": "BYOK",
+      "pages": [
+        "byok/what-is-byok",
+        "byok/adding-your-key",
+        "byok/supported-providers"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account/managing-subscription",
+        "account/cancellation"
+      ]
+    },
+    {
+      "group": "Help",
+      "pages": [
+        "troubleshooting/cant-log-in",
+        "troubleshooting/model-not-responding",
+        "troubleshooting/email-not-received",
+        "faq"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "discord": "https://discord.gg/madeformeai"
+  },
+  "feedback": {
+    "thumbsRating": true
+  }
+}
