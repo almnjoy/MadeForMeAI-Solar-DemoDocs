@@ -5,3 +5,8 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal / agent-only files
+WHATS-APP-SETUP.md
+docs.json
+.atlas-analysis.json

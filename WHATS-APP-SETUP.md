@@ -1,3 +1,9 @@
+# Internal Agent Runbook
+
+This file is for MadeForMeAI/OpenClaw setup agents. It is not customer-facing documentation.
+
+---
+
 # OpenClaw WhatsApp Setup Runbook
 
 Purpose: give a small model/agent (for example GPT-4.1-mini) an exact, repeatable process to install the WhatsApp plugin, start the QR login flow, and provide the QR code inside chat.
