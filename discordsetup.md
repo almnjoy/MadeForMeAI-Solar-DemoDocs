@@ -6,7 +6,7 @@ This file is for MadeForMeAI/OpenClaw setup agents. It is not customer-facing do
 
 # OpenClaw Discord Setup Runbook
 
-Purpose: give a small model/agent (for example GPT-4.1-mini) an exact, repeatable process to help a user connect Discord to an OpenClaw/MadeForMeAI instance.
+Purpose: give a small model/agent (for example GPT-4.1-mini) an exact, repeatable process to help a user connect their own Discord server to an OpenClaw/MadeForMeAI instance.
 
 This is for OpenClaw instances running in a container or server where the setup agent can run `openclaw` CLI commands and guide the user through the Discord Developer Portal.
 
@@ -14,7 +14,7 @@ This is for OpenClaw instances running in a container or server where the setup 
 
 ## Goal
 
-Set up a Discord bot account for OpenClaw so the user's assistant can receive and send Discord messages in a server, channel, thread, or DM.
+Set up a Discord bot account for OpenClaw so the user's assistant can receive and send Discord messages in the user's own Discord server, channel, thread, or DM.
 
 Successful final state:
 
@@ -37,16 +37,18 @@ Intents: messageContent=enabled guildMembers=enabled presence=enabled
 
 If the user asks to set up Discord:
 
-1. Explain that Discord requires a bot token from the Discord Developer Portal.
-2. Help the user create a Discord application and bot.
-3. Tell the user to enable required privileged intents.
-4. Generate or provide a bot invite URL with the right permissions.
-5. Have the user invite the bot to their server.
-6. Add the bot token to OpenClaw with `openclaw channels add --channel discord --bot-token ...`.
-7. Restart/reload the gateway if needed.
-8. Verify with `openclaw channels list`, `openclaw channels capabilities --channel discord`, and `openclaw status --deep`.
-9. Send a test message or ask the user to mention the bot in Discord.
-10. If the token was pasted in chat, tell the user to rotate it after setup.
+1. Confirm this is for the user's own Discord server/app, not a MadeForMeAI-owned Discord server.
+2. Explain that Discord requires a bot token from the Discord Developer Portal.
+3. Help the user create a Discord application and bot.
+4. Tell the user to enable required privileged intents.
+5. Ask whether they want basic chat permissions or admin/support permissions.
+6. Generate or provide a bot invite URL with the right permissions.
+7. Have the user invite the bot to their server.
+8. Add the bot token to OpenClaw with `openclaw channels add --channel discord --bot-token ...`.
+9. Restart/reload the gateway if needed.
+10. Verify with `openclaw channels list`, `openclaw channels capabilities --channel discord`, and `openclaw status --deep`.
+11. Send a test message or ask the user to mention the bot in Discord.
+12. If the token was pasted in chat, tell the user to rotate it after setup.
 
 ---
 
@@ -58,6 +60,7 @@ If the user asks to set up Discord:
 - If the user pastes a token in chat, use it only for the setup step and tell them to rotate it afterward.
 - Never publish a real bot token, application secret, client secret, OAuth secret, or webhook URL.
 - Never ask for the user's Discord password.
+- Do not connect the user to a MadeForMeAI-owned Discord application unless they explicitly ask for that. The normal setup is for the user's own Discord application and server.
 - The user only needs to provide a bot token, not their Discord account login.
 
 ---
@@ -174,7 +177,7 @@ Manage Events
 Create Events
 ```
 
-Use the smallest permission set that matches the user's goal. If unsure, start with the basic set and add more later.
+Use the smallest permission set that matches the user's goal. The setup supports both basic chat permissions and admin/support permissions. If unsure, ask which mode they want; default to basic and add admin permissions only when the user wants channel, role, event, moderation, or server-management features.
 
 Then tell the user:
 
@@ -397,7 +400,7 @@ Manage Roles
 View Audit Log
 ```
 
-Only request moderation/admin permissions if the user explicitly wants those features.
+The Discord setup can support both basic and admin permission modes. Only request moderation/admin permissions if the user explicitly wants channel, role, event, moderation, or server-management features.
 
 ---
 
@@ -572,14 +575,14 @@ Since the bot token was pasted into chat during setup, rotate it in the Discord 
 Use this when delegating the task to a smaller agent:
 
 ```text
-Set up Discord for OpenClaw.
+Set up Discord for OpenClaw. This is for the user's own Discord server and Discord application, not a MadeForMeAI-owned Discord server.
 
 Guide the user through Discord Developer Portal:
 1. Create an application.
 2. Add a bot.
 3. Enable Message Content Intent and Server Members Intent.
 4. Use OAuth2 URL Generator with scopes: bot, applications.commands.
-5. Invite the bot to the server with permissions: View Channels, Send Messages, Read Message History, Send Messages in Threads, Attach Files, Add Reactions, Embed Links, Use Slash Commands.
+5. Ask whether the user wants basic chat permissions or admin/support permissions. For basic, invite the bot with: View Channels, Send Messages, Read Message History, Send Messages in Threads, Attach Files, Add Reactions, Embed Links, Use Slash Commands. For admin/support, add only the extra permissions the user wants, such as Manage Messages, Manage Threads, Manage Channels, Manage Roles, or Manage Events.
 6. Ask the user for the bot token only when ready. Treat it as a password.
 
 Then run:
