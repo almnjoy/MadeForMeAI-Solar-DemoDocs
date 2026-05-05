@@ -3,40 +3,46 @@ title: BYOK Setup
 description: How to connect your own API key on the $15/month BYOK plan.
 ---
 
-BYOK (Bring Your Own Key) lets you connect your existing OpenAI, Anthropic, or OpenRouter API key to your MadeForMeAI instance. You pay the AI provider directly for token usage — we charge $15/month to run your private setup.
+BYOK (Bring Your Own Key) is for people who already have an API key from OpenAI, Anthropic, or OpenRouter. You supply the key, we run the private infrastructure.
 
-## Before you start
+## When BYOK makes sense
 
-You'll need an active API account with one of the following:
-- [OpenAI](https://platform.openai.com) — create an API key under API Keys
-- [Anthropic](https://console.anthropic.com) — create an API key under API Keys
-- [OpenRouter](https://openrouter.ai) — create an API key in your dashboard (gives access to 300+ models)
+- You already pay for an OpenAI or Anthropic subscription and have API access
+- You want to use a specific model that you're already paying for elsewhere
+- You're cost-conscious and want full control over your AI usage spend
 
-## Adding your API key
+## Supported providers
 
-Your Setup Assistant will walk you through this on first login. You can also do it manually:
+- **OpenRouter** — recommended, gives you access to hundreds of models with a single key
+- **OpenAI** — GPT-4, GPT-4o, and others
+- **Anthropic** — Claude models
 
-1. Go to your control panel at `yourname-soul.madeformeai.com`
-2. Navigate to **Settings → API Keys**
-3. Paste your API key and save
+## How to add your API key
 
-Your key is stored encrypted. We never log or expose it.
+<Steps>
+  <Step title="Log in to your dashboard">
+    Go to [madeformeai.com/dashboard](https://madeformeai.com/dashboard) and log in.
+  </Step>
 
-## Choosing your models
+  <Step title="Find your API key section">
+    On the dashboard, look for the **API Key** card. This shows your current key (masked).
+  </Step>
 
-Once your key is connected, you can select which models to use in your AI's settings. The models available depend on which provider's key you've added.
+  <Step title="Rotate or replace the key">
+    Click **Rotate key** to update it. Paste your new API key from your provider.
+  </Step>
+</Steps>
 
-<Note>OpenRouter is the most flexible option — one key gives you access to OpenAI, Anthropic, Google, and hundreds of other models. Recommended if you want options.</Note>
+## Where to get an API key
 
-## Usage and costs
+**OpenRouter** (recommended for BYOK): Sign up at [openrouter.ai](https://openrouter.ai). Create an API key in your account settings. You can deposit credits and use them across hundreds of models.
 
-You pay your AI provider directly for every token used. Your MadeForMeAI subscription ($15/mo) covers the hosting, memory, workspace, and all platform features — not the AI tokens.
+**Anthropic**: Sign up at [console.anthropic.com](https://console.anthropic.com). API keys are in Account Settings.
 
-Monitor your usage directly in your provider's dashboard:
-- OpenAI: platform.openai.com/usage
-- Anthropic: console.anthropic.com/usage
-- OpenRouter: openrouter.ai/activity
+**OpenAI**: Sign up at [platform.openai.com](https://platform.openai.com). API keys are in the API section.
 
-## Switching providers
+## Usage costs
 
-You can update your API key at any time from the control panel. Switching from OpenAI to Anthropic (or vice versa) just requires pasting a new key.
+With BYOK, you pay your AI provider directly for what you use. Costs vary by model and usage volume. Check your provider's pricing page for details.
+
+Your $15/month MadeForMeAI subscription covers the platform — the private server, memory, app connections, and everything else.

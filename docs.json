@@ -37,12 +37,37 @@
         "pages": [
           "introduction",
           "quickstart",
+          "getting-started/what-is-your-ai",
+          "getting-started/your-ai-url",
+          "getting-started/first-conversation",
+          "getting-started/add-to-phone",
           "faq"
+        ]
+      },
+      {
+        "group": "Understanding Your AI",
+        "pages": [
+          "understanding/how-memory-works",
+          "understanding/what-it-can-do",
+          "understanding/cloud-not-local",
+          "understanding/tool-calls"
+        ]
+      },
+      {
+        "group": "Connect Your Apps",
+        "pages": [
+          "connect/overview",
+          "connect/whatsapp",
+          "connect/telegram",
+          "connect/gmail-google",
+          "connect/google-drive"
         ]
       },
       {
         "group": "Features",
         "pages": [
+          "features/memory",
+          "features/setup-assistant",
           {
             "group": "Agents",
             "pages": [
@@ -50,9 +75,7 @@
               "features/your-agents",
               "features/example-agents"
             ]
-          },
-          "features/memory",
-          "features/whatsapp"
+          }
         ]
       },
       {
@@ -66,7 +89,10 @@
       {
         "group": "Troubleshooting",
         "pages": [
-          "troubleshooting/common-issues"
+          "troubleshooting/common-issues",
+          "troubleshooting/cant-log-in",
+          "troubleshooting/my-ai-forgot-me",
+          "troubleshooting/slow-or-stuck"
         ]
       },
       {

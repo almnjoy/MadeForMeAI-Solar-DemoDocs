@@ -1,64 +1,24 @@
 ---
-title: Agents
-description: What agents are, how they work, and how to build your own.
+title: What Are Agents?
+description: Your AI has different modes for different jobs — here's what that means.
 ---
 
-Your AI instance isn't just one thing — it's a collection of agents. Each agent is a focused mode with its own personality, purpose, and context. You switch between them depending on what you need.
+Your AI isn't just one static thing. It can operate in different **modes** (called agents) depending on what you need it to do.
 
-## What is an agent?
+Think of it like having one assistant who can switch hats depending on the job — the same person, but operating in a focused mode for the task at hand.
 
-An agent is a separate AI workspace inside your instance. It has its own:
+## The agents you have by default
 
-- **Identity** — who it is and how it behaves
-- **Memory** — what it knows and tracks over time
-- **Tools** — what it can access and reference
-- **Purpose** — a specific job it's designed to do
+**Your main AI** is what you interact with every day — it handles conversations, answers questions, writes things, manages your tasks, and connects to your apps.
 
-Agents share the same underlying AI model, but each one is shaped by a set of files that define how it should think, respond, and focus. Think of them as different modes — or different people on a team — each specialized for a different kind of work.
+**The Setup Assistant** is a specialized mode that helps you connect apps and configure features. It's designed to work well with non-technical users and give step-by-step guidance without overwhelming you. [Learn more →](/features/setup-assistant)
 
-## Switching agents
+## Why this matters
 
-In your chat interface, use the agent selector at the top to switch between available agents. Each agent starts fresh from its own context, not from what you were discussing with a different agent.
+Specialized agents can focus on one job without getting confused by everything else. Your Setup Assistant, for example, follows a strict process and doesn't get distracted by off-topic questions — it's built to handle one thing and do it reliably.
 
-## How agents are built — the workspace
+Over time, MadeForMeAI may offer more specialized agents for specific use cases. For now, your main AI handles the vast majority of what you'll need day to day.
 
-Every agent has a **workspace folder** — a directory of plain text files that the agent reads at the start of each session. These files are the agent's brain.
+## You don't need to think about this much
 
-The standard files are:
-
-| File | Purpose |
-|---|---|
-| `SOUL.md` | Core personality, values, and behavioral principles |
-| `IDENTITY.md` | Who the agent is — name, role, vibe, emoji |
-| `AGENTS.md` | Instructions for how to operate in this workspace |
-| `TOOLS.md` | What environment and resources the agent has access to |
-| `USER.md` | Information about the person it's talking to |
-| `HEARTBEAT.md` | Optional: tasks to run on a schedule |
-| `BOOTSTRAP.md` | First-run only — deleted after the agent reads it |
-
-The agent reads these files at session start, then uses them to shape every response. Change a file, change how the agent behaves — no redeployment needed.
-
-## Memory
-
-Agents wake up fresh each session. Files are their continuity.
-
-- **Daily notes:** `memory/YYYY-MM-DD.md` — the agent writes what it learns each day
-- **Long-term:** `MEMORY.md` — persistent facts, preferences, and context
-- **User tracking:** `USER.md` — updated as the agent learns about you
-
-If an agent needs to remember something, it writes it down. This is intentional — it keeps the agent reliable across sessions without depending on a single context window.
-
-## Building your own agent
-
-An agent is just a folder of markdown files. To create one:
-
-1. Create a workspace folder with the standard files above
-2. Write `SOUL.md` — define the personality and core behavior
-3. Write `IDENTITY.md` — give it a name and role
-4. Write `AGENTS.md` — set its operating rules and focus
-5. Write `TOOLS.md` — describe what it has access to
-6. Register it in your OpenClaw config under `agents.list`
-
-The more specific the files, the more focused and useful the agent. Vague instructions produce vague behavior. Precise files produce precise agents.
-
-<Note>Your Setup Assistant can help you configure a new agent. Just describe what you want it to do and it will walk you through the setup.</Note>
+Unless you're specifically doing app setup, you're always talking to your main AI. The agent stuff happens in the background. You just talk.
