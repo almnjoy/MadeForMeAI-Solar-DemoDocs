@@ -33,10 +33,25 @@
     {
       "group": "Features",
       "pages": [
+        "features/dashboard",
         "features/memory",
+        "features/model-picker",
+        "features/agent-switcher",
+        "features/setup-assistant",
+        "features/job-search-agent",
+        "features/scheduled-tasks",
         "features/file-uploads",
-        "features/web-search",
-        "features/model-picker"
+        "features/web-search"
+      ]
+    },
+    {
+      "group": "Connect Your Apps",
+      "pages": [
+        "connect/overview",
+        "connect/whatsapp",
+        "connect/telegram",
+        "connect/discord",
+        "connect/google-drive"
       ]
     },
     {
