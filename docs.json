@@ -39,6 +39,7 @@
           "quickstart",
           "getting-started/what-is-your-ai",
           "getting-started/your-ai-url",
+          "getting-started/logging-in",
           "getting-started/first-conversation",
           "getting-started/add-to-phone",
           "faq"
@@ -59,21 +60,27 @@
           "connect/overview",
           "connect/whatsapp",
           "connect/telegram",
-          "connect/gmail-google",
+          "connect/discord",
           "connect/google-drive"
         ]
       },
       {
         "group": "Features",
         "pages": [
+          "features/dashboard",
           "features/memory",
+          "features/model-picker",
+          "features/file-uploads",
+          "features/web-search",
           "features/setup-assistant",
+          "features/job-search-agent",
+          "features/scheduled-tasks",
           {
             "group": "Agents",
             "pages": [
+              "features/agent-switcher",
               "features/agents",
-              "features/your-agents",
-              "features/example-agents"
+              "features/your-agents"
             ]
           }
         ]
