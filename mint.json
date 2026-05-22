@@ -77,6 +77,14 @@
         "troubleshooting/email-not-received",
         "faq"
       ]
+    },
+    {
+      "group": "NorthernPWR Demo",
+      "pages": [
+        "northernpwr/overview",
+        "northernpwr/solar-101",
+        "northernpwr/install-process"
+      ]
     }
   ],
   "footerSocials": {
